@@ -8,7 +8,7 @@ st.title("🤖 Momar AI Product Assistant")
 client_type = st.text_input("Client Type (e.g., Food Processing, Logistics Hub)")
 issue = st.text_area("Describe the Maintenance Challenge")
 
-if st.button("Generate Proposal"):
+if st.button("Recommend Product"):
     proposal = generate_proposal(client_type, issue)
     st.markdown("---")
     st.markdown(proposal)
